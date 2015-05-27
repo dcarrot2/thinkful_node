@@ -1,0 +1,18 @@
+{
+  "name": "shopping-list",
+  "version": "1.0.0",
+  "description": "A shopping list API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Shopping",
+    "API"
+  ],
+  "author": "Daniel Diaz",
+  "license": "ISC",
+  "dependencies": {
+    "node-static": "^0.7.6"
+  }
+}
