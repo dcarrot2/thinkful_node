@@ -16,6 +16,14 @@ Diner.prototype.addDish = function(dish){
 	this.dishes.push(dish);
 };
 
+var sumDishesFunctional = function(dishes){
+	var sum = 0;
+	dishes.forEach(function(dish){
+		sum += dish.price;
+	});
+	return sum;
+}
+
 // Simple sum return doesn't need own Diner attribute?
 Diner.prototype.sumDishes = function(){
 	var sum = 0;
@@ -98,6 +106,10 @@ var burger = new Dish("Burger", 5.00);
 var nuggies = new Dish("Nuggies", 2.32);
 var nachos = new Dish("Nachos", 6.23);
 
+var dishes = [curry, burger, nuggies, nachos];
+
+console.log("Sum Dishes Functional: " + sumDishesFunctional(dishes));
+
 daniel.addDish(curry);
 daniel.addDish(burger);
 bri.addDish(nuggies);
@@ -105,5 +117,3 @@ elias.addDish(nachos);
 miranda.addDish(burger);
 
 printBill(friends);
-
-
